@@ -7,7 +7,7 @@ const ManageBook = () => {
 
   useEffect(() => {
     // fetch all books from db
-    fetch("http://localhost:5000/all-books")
+    fetch("https://teal-easy-skunk.cyclic.app/all-books")
       .then((res) => res.json())
       .then((data) => setAllBooks(data));
   }, []);
@@ -15,7 +15,7 @@ const ManageBook = () => {
   //Delete a book
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://teal-easy-skunk.cyclic.app/book/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

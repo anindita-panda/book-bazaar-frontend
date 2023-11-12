@@ -60,7 +60,7 @@ const EditBook = () => {
       pdfUrl,
     };
 
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://teal-easy-skunk.cyclic.app/book/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

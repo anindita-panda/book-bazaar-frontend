@@ -51,7 +51,7 @@ const UploadBook = () => {
     // console.log(bookObj);
 
     // Send data to db
-    fetch("http://localhost:5000/upload-book", {
+    fetch("https://teal-easy-skunk.cyclic.app/upload-book", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
