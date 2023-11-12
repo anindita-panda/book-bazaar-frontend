@@ -1,0 +1,4 @@
+header, nav{
+    /* to make the header fixed and top of all*/
+    z-index: 100001 !important; 
+}
